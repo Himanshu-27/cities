@@ -15,4 +15,4 @@ If you are developing a production application, we recommend using TypeScript an
 `npm install`
 
 ### Run development server
-`npm run dev`
+`npm run dev` 
