@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#search-city {
+  width: 241px;
+  height: 38px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(206, 212, 218);
+  padding: 6px 0 6px 12px;
+  border-radius: 4px;
+}
+
+#search-city:active,
+#search-city:focus {
+  border-color: #7952b3;
+  box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+button {
+  background: black;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fetch-count {
+  display: flex;
+  gap: 10px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #3498db; /* Change color as needed */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.message {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  font-size: 24px;
+  font-weight: bolder;
+}
